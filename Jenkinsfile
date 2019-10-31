@@ -19,6 +19,13 @@ pipeline {
 		  
 		      }
 		  }
+		  
+		  stage('deploy to staging') {
+		      steps {
+                  build 'Deploy to Staging'              
+			  }			  
+		  
+		  }
 	 
 	 
 	 }
